@@ -1,0 +1,247 @@
+.b {
+  text-rendering: optimizeLegibility;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1em; /* Reduced font size */
+}
+.divimg {
+  background-color: rgba(0, 18, 51);
+}
+.nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em; /* Reduced font size */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(0, 229, 255);
+  transition: all 0.4s ease-in-out;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.card {
+  transition: transform 0.4s;
+}
+
+.about:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+}
+.demo {
+  background: #2c304a;
+}
+.progress-title {
+  font-size: 14px; /* Reduced font size */
+  font-weight: 600;
+  color: #fff;
+  margin: 30px 0 15px; /* Reduced margin */
+}
+.progress {
+  height: 14px; /* Reduced height */
+  background: #171b3c;
+  border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 2px 2px #4f4c4c;
+  margin-bottom: 20px; /* Reduced margin */
+  overflow: visible;
+  position: relative;
+}
+.progress .progress-bar {
+  border-radius: 20px;
+  border: 1px solid #000;
+  -webkit-animation: animate-positive 2s;
+  animation: animate-positive 2s;
+}
+.progress .progress-value {
+  width: 55px; /* Reduced width */
+  height: 20px; /* Reduced height */
+  line-height: 20px; /* Reduced line-height */
+  background: #171b3c;
+  font-size: 13px; /* Reduced font size */
+  color: #fff;
+  border-radius: 0 0 15px 15px;
+  border: 1px solid #000;
+  border-top: none;
+  box-shadow: 0 2px 2px #4f4c4c;
+  position: absolute;
+  bottom: -20px; /* Adjusted position */
+  right: 50px; /* Adjusted position */
+}
+@keyframes animate-positive {
+  from {
+    width: 0;
+  }
+}
+#p1 {
+  color: #ffffff;
+  font-size: 1.5em; /* Reduced font size */
+}
+
+body {
+  background-color: rgba(0, 18, 51);
+}
+
+.maincard {
+  border: none;
+  overflow: hidden;
+  height: 100px;
+
+  color: #fff;
+}
+.backgroundmaincard1 {
+  background: linear-gradient(0deg, #0066b2 0%, #318ce7 100%);
+}
+.backgroundmaincard2 {
+  background: linear-gradient(0deg, #318ce7 0%, #78abdd 100%);
+}
+
+.maincard .card-body {
+  transition: all 2000ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.maincard:hover .card-body {
+  margin-top: 20px; /* Adjusted margin */
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.maincard .card-footer {
+  background: none;
+  border-top: none;
+}
+
+.maincard .media img {
+  max-width: 40px; /* Reduced size */
+}
+
+.maincard .card-title {
+  font-weight: 800;
+  font-size: 1.2em; /* Reduced font size */
+}
+a {
+  text-decoration: none;
+}
+.maincard .card-meta {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1.5px; /* Adjusted letter-spacing */
+}
+
+.custom-height2 {
+  min-height: 270px; /* Reduced height */
+}
+
+.custom-height3 {
+  min-height: 250px; /* Reduced height */
+}
+.maincard {
+  background-color: #f8f9fa; /* Change the background color */
+  border: none; /* Remove the default border */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Add a shadow effect */
+  transition: transform 0.3s ease; /* Add a transition effect */
+   
+}
+
+.maincard:hover {
+  transform: scale(1.05); /* Increase the size of the card when hovered */
+}
+
+.maincard .card-img-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  ); /* Add a gradient overlay */
+  padding: 1.25rem; /* Adjust the padding */
+}
+
+.maincard .card-title {
+  font-weight: bold; /* Make the card title bold */
+}
+
+.maincard .card-meta {
+  text-transform: uppercase; /* Change the card meta text to uppercase */
+  font-size: 0.875rem; /* Adjust the font size */
+  color: #070e3f; /* Change the color */
+}
+
+.maincard .card-footer {
+  background-color: transparent; /* Remove the footer background color */
+  border-top: none; /* Remove the footer border */
+  position: absolute; /* Position the footer absolute */
+  bottom: 0; /* Position the footer at the bottom */
+  left: 0; /* Position the footer at the left */
+  right: 0; /* Position the footer at the right */
+  padding: 1.25rem; /* Adjust the padding */
+}
+
+.maincard .media img {
+  width: 32px; /* Adjust the image size */
+  height: 32px; /* Adjust the image size */
+}
+
+.maincard .media-body h6 {
+  font-weight: bold; /* Make the media body title bold */
+}
+
+.maincard .media-body small {
+  color: #ffffff; /* Change the color */
+}
+
+/* Add custom heights for different cards */
+.custom-height2 {
+  height: 170px; /* Adjust the height */
+}
+
+.custom-height3 {
+  height: 190px; /* Adjust the height */
+}
+
+/* Loading icon styles */
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(3, 33, 67);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-border {
+  border-width: 4px; /* Adjust the border width */
+  border-color:rgb(0, 255, 225) transparent transparent transparent; /* Adjust the border color */
+  animation: spinner-border 1.5s linear infinite; /* Adjust the animation duration and timing */
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg); /* Adjust the rotation angle */
+  }
+}
+.imgwave {
+  background-image: url(t);
+  position: absolute;
+  top: 20;
+  left: 0;
+  width: 100%;
+  height: 60%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1; /* Set z-index to -1 to make it appear behind other elements */
+}
+.twitter-image {
+  opacity: 0.8; /* Change the value to adjust the opacity */
+}
